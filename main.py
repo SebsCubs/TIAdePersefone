@@ -18,8 +18,9 @@ import cv2
 import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn import preprocessing
-
+from data_enhancement import rotation__span
 ####################_Main routine_##################################
 
-
-
+img = cv2.imread('test_data/asta_ascendente/l/0.tif')
+rotation__span.rotation_create(img,'test_data/asta_ascendente/l')
+rotation__span.warp_create(img)
